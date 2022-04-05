@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
             <About></About>
           </>
         ) : (
