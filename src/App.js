@@ -3,17 +3,17 @@ import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
 
   const [categories] = useState([
     {
-      name: 'portfolio',
-      description: 'Display of all my projects.'
+      name: 'portfolio'
     },
     {
-      name: 'resume',
-      description: 'Resume of all my achievements, skills, and employment history.'
+      name: 'resume'
+
     }
   ]);
 
@@ -36,7 +36,11 @@ function App() {
         {!contactSelected ? (
           <>
             <Portfolio currentCategory={currentCategory}></Portfolio>
+
             <About currentCategory={currentCategory}></About>
+
+            <Resume currentCategory={currentCategory}></Resume>
+
           </>
         ) : (
           <ContactForm></ContactForm>
