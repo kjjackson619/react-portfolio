@@ -36,7 +36,7 @@ function App() {
         {!contactSelected ? (
           <>
             <Portfolio currentCategory={currentCategory}></Portfolio>
-            <About></About>
+            <About currentCategory={currentCategory}></About>
           </>
         ) : (
           <ContactForm></ContactForm>
