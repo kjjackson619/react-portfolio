@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
 
 function App() {
+
+  const [categories] = useState([
+    {
+      name: 'portfolio',
+      description: 'Display of all my projects.'
+    },
+    {
+      name: 'resume',
+      description: 'Resume of all my achievements, skills, and employment history.'
+    }
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
 
