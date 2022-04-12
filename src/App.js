@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-import Nav from './components/Nav';
+import AppNav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -14,16 +14,18 @@ function App() {
 
     <Router>
       <>
-        <Nav />
+        <AppNav />
         <Routes>
 
-          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/portfolio' element={<Portfolio />} />
 
-          <Route exact path='/about' component={About} />
+          <Route exact path='/' element={<About />} />
 
-          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/about' element={<About />} />
 
-          <Route exact path='/contact' component={ContactForm} />
+          <Route exact path='/resume' element={<Resume />} />
+
+          <Route exact path='/contact' element={<ContactForm />} />
 
         </Routes>
       </>
