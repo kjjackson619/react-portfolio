@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
@@ -7,46 +10,24 @@ import Resume from './components/Resume';
 
 function App() {
 
-  const [categories] = useState([
-    {
-      name: 'portfolio'
-    },
-    {
-      name: 'resume'
-
-    }
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
-
   return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      >
 
-      </Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Portfolio currentCategory={currentCategory}></Portfolio>
+    <Router>
+      <>
+        <Nav />
+        <Routes>
 
-            <About currentCategory={currentCategory}></About>
+          <Route exact path='/' component={Portfolio} />
 
-            <Resume currentCategory={currentCategory}></Resume>
+          <Route exact path='/' component={About} />
 
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-    </div>
+          <Route exact path='/' component={Resume} />
+
+          <Route exact path='/' component={ContactForm} />
+
+        </Routes>
+      </>
+    </Router>
   );
 }
 
