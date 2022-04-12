@@ -17,13 +17,13 @@ function App() {
         <Nav />
         <Routes>
 
-          <Route exact path='/' component={Portfolio} />
+          <Route exact path='/portfolio' component={Portfolio} />
 
-          <Route exact path='/' component={About} />
+          <Route exact path='/about' component={About} />
 
-          <Route exact path='/' component={Resume} />
+          <Route exact path='/resume' component={Resume} />
 
-          <Route exact path='/' component={ContactForm} />
+          <Route exact path='/contact' component={ContactForm} />
 
         </Routes>
       </>
