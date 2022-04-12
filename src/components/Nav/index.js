@@ -10,30 +10,32 @@ const AppNav = () => {
 
     return (
         <>
-            <Navbar expand='lg'>
+            <Navbar>
+
                 <Container fluid>
                     <Navbar.Brand as={Link} to='/'>
-                        💻 Kevin Jackson Portfolio
+                        <h2>💻 Kevin Jackson Portfolio</h2>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id="navbar">
                         <Nav className='ml-auto'>
                             <Nav.Link as={Link} to='/'>
-                                About me
+                                <h4>About me</h4>
                             </Nav.Link>
                             <Nav.Link as={Link} to='/contact'>
-                                Contact
+                                <h4>Contact</h4>
                             </Nav.Link>
                             <Nav.Link as={Link} to='/portfolio'>
-                                Portfolio
+                                <h4>Portfolio</h4>
                             </Nav.Link>
                             <Nav.Link as={Link} to='/resume'>
-                                Resume
+                                <h4>Resume</h4>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
                 </Container>
+
             </Navbar>
         </>
     );

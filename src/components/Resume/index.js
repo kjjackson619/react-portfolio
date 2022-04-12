@@ -4,11 +4,13 @@ function Resume() {
 
     return (
         <div>
+            <br />
             <p>
                 Download my
-                <a href="/">Resume
+                <a href="#">Resume
                 </a>
             </p>
+            <br />
             <ul>
                 <h4>
                     Front-End Proficiencies
@@ -23,6 +25,7 @@ function Resume() {
             <li>Bootstrap</li>
 
             <div>
+                <br />
                 <br />
                 <ul>
                     <h4>Back-End Proficiencies</h4>
