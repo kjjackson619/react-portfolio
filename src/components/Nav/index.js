@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import About from '../About';
-import Contact from '../Contact';
-import Portfolio from '../Portfolio';
-import Resume from '../Resume';
+
 
 const AppNav = () => {
 
@@ -20,7 +17,7 @@ const AppNav = () => {
                     <Navbar.Collapse id="navbar">
                         <Nav className='ml-auto'>
                             <Nav.Link as={Link} to='/'>
-                                <h4>About me</h4>
+                                <h4>About</h4>
                             </Nav.Link>
                             <Nav.Link as={Link} to='/contact'>
                                 <h4>Contact</h4>

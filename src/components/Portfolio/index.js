@@ -1,94 +1,71 @@
-import React, { useState } from 'react';
-import Modal from '../Modal';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from '../ProjectCard';
+import pizza from '../../assets/large/portfolio/pizza.jpg';
+import runbuddy from '../../assets/large/portfolio/runbuddy.jpg';
+import budget from '../../assets/large/portfolio/budget.jpg';
+import pinit from '../../assets/large/portfolio/pinit.jpg';
+import book from '../../assets/large/portfolio/book.jpg';
+import team from '../../assets/large/portfolio/team.jpg';
 
-const Project = ({ category }) => {
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentPhoto, setCurrentPhoto] = useState();
-
-    const [photos] = useState([
-
-        {
-            name: 'Project Pizza',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Run Buddy',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'PIN IT!',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Book Search Engine',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Weather Dashboard',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Food Festival',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Deep Thoughts',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Note Taker',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Employee Database',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Team Profile Generator',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-        {
-            name: 'Budget Tracker',
-            category: 'portfolio',
-            description: 'Lorem'
-        },
-    ]);
-
-    const currentPhotos = photos.filter(photo => photo.category === category);
-
-    const toggleModal = (image, i) => {
-        setCurrentPhoto({ ...image, index: i })
-        setIsModalOpen(!isModalOpen);
-    }
+const Project = () => {
 
     return (
-        <div>
-            {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
-            <div className="flex-row">
-                {currentPhotos.map((image, i) => (
-                    <img
-                        src={require(`../../assets/small/${category}/${i}.jpg`)}
-                        alt={image.name}
-                        className="img-thumbnail mx-1"
-                        onClick={() => toggleModal(image, i)}
-                        key={image.name}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-};
+        <Container fluid>
 
+            <h2>Recent Creations:</h2>
+            <Row>
+                <Col>
+                    <ProjectCard
+                        img={pizza}
+                        title="Project Pizza"
+                        link="https://github.com/YourFunkyDad/project-pizza" />
+                </Col>
+                <Col>
+                    <ProjectCard
+                        img={pinit}
+                        title="PIN IT!"
+                        link="https://github.com/kjjackson619/project-02" />
+                </Col>
+
+            </Row>
+            <Row>
+                <Col>
+                    <ProjectCard
+                        img={book}
+                        title="Google Book Search"
+                        link="https://github.com/kjjackson619/book-search-engine" />
+                </Col>
+
+
+                <Col>
+                    <ProjectCard
+                        img={budget}
+                        title="Budget Tracker"
+                        link="https://github.com/kjjackson619/budget-tracker" />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <ProjectCard
+                        img={team}
+                        title="Team Profile Generator"
+                        link="https://github.com/kjjackson619/team-profile-generator" />
+                </Col>
+                <Col>
+                    <ProjectCard
+                        img={runbuddy}
+                        title="Run Buddy"
+                        link="https://github.com/kjjackson619/run-buddy" />
+                </Col>
+
+            </Row>
+
+        </Container>
+
+    )
+
+
+};
 
 export default Project;

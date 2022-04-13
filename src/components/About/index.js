@@ -5,10 +5,14 @@ function About() {
     return (
         <section className="my-5">
             <h2 id="about">Who am I?</h2>
-            <img src={coverImage} className="my-2" style={{ width: '100%' }} alt="cover" />
+            <img src={coverImage} className="my-2" style={{ width: '98%' }} alt="cover" />
             <div className="my-2">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+                    Hello, welcome to my portfolio! I am a former graduate from Ohio State University, from which I received a Bachelors Degree of Arts in Sociology.
+                    I currently work in the Logistics industry, where I grew a desire to work with technology.
+                    I have just recently finished off my endeavor of going back to OSU, in which I am now also a graduate in Full Stack and MERN web development.
+                    I am excited to extend my array of proficiencies, as well as, further my professional career and development within the industry! Check out some of my work in my portfolio, as well as the link to my professional resume.
+                    Also, be sure to give me a follow via the links to Github and LinkedIn below!
                 </p>
             </div>
         </section>

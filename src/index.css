@@ -1,7 +1,12 @@
+* {
+  margin-left: 1%;
+}
+
 main {
 	margin: 0 auto;
 	max-width: 70%;
   padding: 10px 30px;
+ 
 }
 :root {
   --primary: #633409;
@@ -119,6 +124,7 @@ button {
 
 button:hover {
   opacity: .8;
+  background-color: var(--dark);
 }
 
 button[disabled] {
@@ -156,15 +162,6 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-ul {
-  margin-left: 1%;
-}
-
-li {
-  list-style: none;
-  margin-left: 1%;
-}
-
 
 nav a:hover {
   text-decoration: none;
@@ -179,6 +176,11 @@ textarea {
 	height: 200px;
 	border: 3px solid #cccccc;
 	padding: 5px;
+}
+
+footer {
+  position: -webkit-sticky;
+  padding-top: 3%;
 }
 
 .container {
@@ -220,6 +222,7 @@ textarea {
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
+
 }
 
 .my-5 {
@@ -248,9 +251,13 @@ textarea {
 }
 
 .card {
-  width: 25%;
+  width: 75%;
   text-align: center;
+  margin-bottom: 3%;
+  background-color: var(--dark);
+  border: var(--dark);
 }
+
 
 .img-thumbnail {
   width: 300px;
@@ -284,4 +291,23 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+
+.card-button {
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer
+ 
+}
+
+.card-button:hover {
+  opacity: .8;
+  background-color: var(--dark);
+}
+
+.card-button[disabled] {
+  cursor: default;
+  opacity: .8;
 }
