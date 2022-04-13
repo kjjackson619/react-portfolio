@@ -8,7 +8,7 @@ function Resume() {
             <p>
                 Download my
                 <a href="#">Resume
-                </a>
+                </a> {/* to upload updated Resume to link */}
             </p>
             <br />
             <ul>

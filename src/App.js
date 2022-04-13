@@ -7,6 +7,8 @@ import ContactForm from './components/Contact';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
+
 
 function App() {
 
@@ -28,6 +30,7 @@ function App() {
           <Route exact path='/contact' element={<ContactForm />} />
 
         </Routes>
+        <Footer />
       </>
     </Router>
   );

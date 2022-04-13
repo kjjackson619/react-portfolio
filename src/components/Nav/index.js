@@ -14,7 +14,7 @@ const AppNav = () => {
 
                 <Container fluid>
                     <Navbar.Brand as={Link} to='/'>
-                        <h2>💻 Kevin Jackson Portfolio</h2>
+                        <h2>💻 Kevin Jackson</h2>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id="navbar">
