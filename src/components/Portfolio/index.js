@@ -7,6 +7,7 @@ import budget from '../../assets/large/portfolio/budget.jpg';
 import pinit from '../../assets/large/portfolio/pinit.jpg';
 import book from '../../assets/large/portfolio/book.jpg';
 import team from '../../assets/large/portfolio/team.jpg';
+import shirtshop from '../../assets/large/portfolio/shirtshop.jpg';
 
 const Project = () => {
 
@@ -57,6 +58,13 @@ const Project = () => {
                         img={runbuddy}
                         title="Run Buddy"
                         link="https://github.com/kjjackson619/run-buddy" />
+                </Col>
+
+                <Col>
+                    <ProjectCard
+                        img={shirtshop}
+                        title="Shirt Shop"
+                        link="https://github.com/kjjackson619/project-03" />
                 </Col>
 
             </Row>
