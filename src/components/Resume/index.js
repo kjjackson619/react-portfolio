@@ -8,7 +8,7 @@ function Resume() {
             <p>
                 Download my
                 <a href="https://docs.google.com/document/d/1mkSWp7DwEYf2XGVyURMQZxUTCffO_rBEoOlBgCAAkgc/edit?usp=sharing">Resume
-                </a> {/* to upload updated Resume to link */}
+                </a>
             </p>
             <br />
             <ul>
