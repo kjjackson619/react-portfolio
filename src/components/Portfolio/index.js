@@ -16,56 +16,52 @@ const Project = () => {
 
             <h2>Recent Creations:</h2>
             <Row>
-                <Col>
+                <div>
                     <ProjectCard
                         img={pizza}
                         title="Project Pizza"
                         link="https://github.com/YourFunkyDad/project-pizza" />
-                </Col>
-                <Col>
-                    <ProjectCard
-                        img={pinit}
-                        title="PIN IT!"
-                        link="https://github.com/kjjackson619/project-02" />
-                </Col>
-
-            </Row>
-            <Row>
-                <Col>
-                    <ProjectCard
-                        img={book}
-                        title="Google Book Search"
-                        link="https://github.com/kjjackson619/book-search-engine" />
-                </Col>
+                </div>
 
 
-                <Col>
-                    <ProjectCard
-                        img={budget}
-                        title="Budget Tracker"
-                        link="https://github.com/kjjackson619/budget-tracker" />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <ProjectCard
-                        img={team}
-                        title="Team Profile Generator"
-                        link="https://github.com/kjjackson619/team-profile-generator" />
-                </Col>
-                <Col>
-                    <ProjectCard
-                        img={runbuddy}
-                        title="Run Buddy"
-                        link="https://github.com/kjjackson619/run-buddy" />
-                </Col>
+                <ProjectCard
+                    img={pinit}
+                    title="PIN IT!"
+                    link="https://github.com/kjjackson619/project-02" />
 
-                <Col>
-                    <ProjectCard
-                        img={shirtshop}
-                        title="Shirt Shop"
-                        link="https://github.com/kjjackson619/project-03" />
-                </Col>
+
+
+
+                <ProjectCard
+                    img={book}
+                    title="Google Book Search"
+                    link="https://github.com/kjjackson619/book-search-engine" />
+
+
+
+
+                <ProjectCard
+                    img={budget}
+                    title="Budget Tracker"
+                    link="https://github.com/kjjackson619/budget-tracker" />
+
+
+
+                <ProjectCard
+                    img={team}
+                    title="Team Profile Generator"
+                    link="https://github.com/kjjackson619/team-profile-generator" />
+
+                <ProjectCard
+                    img={runbuddy}
+                    title="Run Buddy"
+                    link="https://github.com/kjjackson619/run-buddy" />
+
+                <ProjectCard
+                    img={shirtshop}
+                    title="Shirt Shop"
+                    link="https://github.com/kjjackson619/project-03" />
+
 
             </Row>
 
